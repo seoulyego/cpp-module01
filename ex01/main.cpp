@@ -5,5 +5,5 @@ int	main(void) {
 
 	a = zombieHorde(10, "eunrlee");
 	delete [] a;
-	return (0);
+	return 0;
 }

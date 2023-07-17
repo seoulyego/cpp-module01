@@ -9,5 +9,5 @@ int	main(void) {
 	b = newZombie("soulee");
 	b->announce();
 	delete b;
-	return (0);
+	return 0;
 }

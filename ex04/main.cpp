@@ -5,7 +5,7 @@
 int	main(int argc, char *argv[]) {
 	if (argc != 4) {
 		std::cout << "Only 4 arguments are allowed" << std::endl;
-		return (1);
+		return 1;
 	}
 
 	std::string		filename = argv[1];
@@ -20,19 +20,19 @@ int	main(int argc, char *argv[]) {
 
 	if (std::strlen(argv[1]) == 0 || s1_length == 0 || s2_length == 0) {
 		std::cout << "Argument is empty" << std::endl;
-		return (1);
+		return 1;
 	}
 
 	infile.open(filename);
 	if (infile.fail()) {
 		std::cout << "Can't open infile" << std::endl;
-		return (1);
+		return 1;
 	}
 
 	outfile.open(filename + ".replace");
 	if (outfile.fail()) {
 		std::cout << "Can't open outfile" << std::endl;
-		return (1);
+		return 1;
 	}
 
 	while (true) {
@@ -54,5 +54,5 @@ int	main(int argc, char *argv[]) {
 	}
 	infile.close();
 	outfile.close();
-	return (0);
+	return 0;
 }
