@@ -2,7 +2,7 @@
 .vscode/
 .obj/
 .cache/
-compile_commands
+compile_commands.json
 brainzzz
 more_brainzzz
 brain

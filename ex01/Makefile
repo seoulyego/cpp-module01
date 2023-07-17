@@ -15,7 +15,7 @@ SRC_FILES			:=	$(addsuffix .cpp,			\
 							main					\
 						)
 OBJ_FILES			:=	$(SRC_FILES:.cpp=.o)
-JSON_FILES			:=	compile_commands
+JSON_FILES			:=	compile_commands.json
 
 SRCS				:=	$(addprefix $(SRC_DIR), $(SRC_FILES))
 OBJS				:=	$(addprefix $(OBJ_DIR), $(OBJ_FILES))
@@ -50,7 +50,7 @@ debug	:
 
 .PHONY	:	clean
 clean	:
-	@$(RM) $(OBJ_DIR) $(CACHE_DIR)
+	@$(RM) $(OBJ_DIR) $(CACHE_DIR) $(JSON_FILES)
 	@echo "\033[91m      REMOVE OBJECT      \033[0m"
 
 .PHONY	:	fclean
