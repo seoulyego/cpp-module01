@@ -1,5 +1,5 @@
-NAME				:=	brain
-PROJECT_NAME		:=	BRAIN
+NAME				:=	harl_filter
+PROJECT_NAME		:=	HARL_FILTER
 
 OBJ_DIR				:=	./.obj/
 CACHE_DIR			:=	./.cache/
@@ -10,6 +10,7 @@ MJFLAGS				 =	-MJ $@.part.json
 RM					:=	rm -rf
 
 SRC_FILES			:=	$(addsuffix .cpp,			\
+							Harl					\
 							main					\
 						)
 OBJ_FILES			:=	$(SRC_FILES:.cpp=.o)

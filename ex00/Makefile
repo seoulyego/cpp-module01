@@ -1,4 +1,4 @@
-NAME				:=	Brainzzz
+NAME				:=	brainzzz
 PROJECT_NAME		:=	BRAINZZZ
 
 OBJ_DIR				:=	./.obj/
