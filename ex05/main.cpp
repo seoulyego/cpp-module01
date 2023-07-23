@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-int	main(void) {
+int	main() {
 	Harl	harl;
 
 	harl.complain("DEBUG");

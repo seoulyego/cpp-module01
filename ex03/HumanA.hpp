@@ -10,9 +10,9 @@ class HumanA {
 		Weapon &weapon;
 	public:
 		HumanA(std::string name, Weapon& weapon);
-		~HumanA(void);
+		~HumanA();
 
-		void	attack(void);
+		void	attack();
 };
 
 #endif  // HUMANA_HPP
